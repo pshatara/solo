@@ -81,6 +81,29 @@ body {
   left: 5px;
 }
 
+.directionContainer {
+  position: absolute;
+  height: 55%;
+  width: 54%;
+  max-height: 55%;
+  max-width: 60%;
+  top: 15%;
+  left: 44%;
+  overflow-y: scroll;
+  border: 2px solid #07546D;
+}
+
+.directionTitle {
+  font-size: 20px;
+  font-style: italic;
+  position: absolute;
+  color: #07546D;
+  border: none;
+  padding: none;
+  top: -15px;
+  left: 7%;
+}
+
 .measurement {
   width: 12%;
   position: absolute;
@@ -108,7 +131,7 @@ body {
   left: 36%;
 }
 
-.description {
+.directions {
   width: 52%;
   height: 20%;
   border-radius: 4px;
@@ -118,7 +141,7 @@ body {
   left: 45%;
 }
 
-.updateDescription {
+.updateDirections {
   position: absolute;
   background-color: #07546D;
   font-style: italic;
