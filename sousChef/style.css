@@ -1,0 +1,131 @@
+body {
+  background-color: #FDFEFE;
+  overflow-y: scroll; 
+}
+
+.title {
+  color: #FDFEFE;
+  font-size: 40px;
+  font-style: italic;
+  top: -13px;
+  position: absolute;
+  left: 10px;
+}
+
+.banner {
+  background-color: #07546D;
+  height: 50px;
+  width: 96%;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  left: 2%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  background-color: #95CBDD;
+  height: 85%;
+  width: 94%;
+  left: 3%;
+
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 55px;
+  margin-left: auto;
+  margin-right: auto;
+};
+
+.title {
+  color: white;
+  font-size: 70px;
+}
+
+.image {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  max-height: 32%;
+  max-width: 37%;
+}
+
+.ingredientContainer {
+  position: absolute;
+  height: 55%;
+  width: 40%;
+  max-height: 55%;
+  max-width: 40%;
+  top: 35%;
+  left: 1%;
+  overflow-y: scroll;
+  border: 2px solid #07546D;
+}
+
+.ingredientTitle {
+  font-size: 20px;
+  font-style: italic;
+  position: absolute;
+  color: #07546D;
+  border: none;
+  padding: none;
+  top: -15px;
+  left: 10%;
+}
+
+.ingredientList {
+  position: absolute;
+  color: #07546D;
+  top: 10px;
+  left: 5px;
+}
+
+.measurement {
+  width: 12%;
+  position: absolute;
+  border-radius: 4px;
+  top: 93%;
+  left: 2%;
+}
+
+.ingredients {
+  width: 20%;
+  position: absolute;
+  border-radius: 4px;
+  top: 93%;
+  left: 15%;
+}
+
+.addIngredient {
+  position: absolute;
+  background-color: #07546D;
+  font-style: italic;
+  border-radius: 4px;
+  border: none;
+  color: #FDFEFE;
+  top: 93%;
+  left: 36%;
+}
+
+.description {
+  width: 52%;
+  height: 20%;
+  border-radius: 4px;
+  position: absolute;
+  overflow-y: scroll;
+  top: 73%;
+  left: 45%;
+}
+
+.updateDescription {
+  position: absolute;
+  background-color: #07546D;
+  font-style: italic;
+  border-radius: 4px;
+  border: none;
+  color: #FDFEFE;
+  top: 93%;
+  left: 45%;
+  width: 52%;
+}
