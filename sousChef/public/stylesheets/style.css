@@ -1,0 +1,233 @@
+body {
+  background-color: #FDFEFE;
+  overflow-y: scroll; 
+}
+
+.title {
+  color: #FDFEFE;
+  font-size: 40px;
+  font-style: italic;
+  top: -13px;
+  position: absolute;
+  left: 10px;
+}
+
+.navRecipes {
+  color: #FDFEFE;
+  font-size: 20px;
+  font-style: italic;
+  top: -10px;
+  position: absolute;
+  right: 110px;
+}
+
+.navCreate {
+  color: #FDFEFE;
+  font-size: 20px;
+  font-style: italic;
+  top: -10px;
+  position: absolute;
+  right: 20px;
+}
+
+.banner {
+  background-color: #07546D;
+  height: 50px;
+  width: 96%;
+  border-radius: 10px;
+  position: absolute;
+  top: 10px;
+  left: 2%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  background-color: #95CBDD;
+  height: 85%;
+  width: 94%;
+  left: 3%;
+
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 55px;
+  margin-left: auto;
+  margin-right: auto;
+};
+
+.title {
+  color: white;
+  font-size: 70px;
+}
+
+.image {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  max-height: 32%;
+  max-width: 37%;
+}
+
+.ingredientContainer {
+  position: absolute;
+  height: 55%;
+  width: 40%;
+  max-height: 55%;
+  max-width: 40%;
+  top: 35%;
+  left: 1%;
+  overflow-y: scroll;
+  border: 2px solid #07546D;
+}
+
+.ingredientTitle {
+  font-size: 20px;
+  font-style: italic;
+  position: absolute;
+  color: #07546D;
+  border: none;
+  padding: none;
+  top: -15px;
+  left: 10%;
+}
+
+.ingredientList li {
+  
+  right: 10%;
+}
+.ingredientList {
+  position: absolute;
+  font-size: 14px;
+  word-wrap: break-word;
+  max-width: 80%;
+  color: #07546D;
+  top: 10px;
+  left: 5px;
+}
+
+.directionContainer {
+  position: absolute;
+  height: 55%;
+  width: 54%;
+  max-height: 55%;
+  max-width: 60%;
+  top: 15%;
+  left: 44%;
+  overflow-y: scroll;
+  border: 2px solid #07546D;
+}
+
+.directionTitle {
+  font-size: 20px;
+  font-style: italic;
+  position: absolute;
+  color: #07546D;
+  border: none;
+  padding: none;
+  top: -15px;
+  left: 7%;
+}
+
+.directionText {
+  text-indent: 15px;
+  font-size: 14px;
+  word-wrap: break-word;
+  max-width: 85%;
+  position: absolute;
+  color: #07546D;
+  top: 10px;
+  left: 5%;
+}
+
+.measurement {
+  width: 12%;
+  position: absolute;
+  border-radius: 4px;
+  top: 93%;
+  left: 2%;
+}
+
+.ingredients {
+  width: 20%;
+  position: absolute;
+  border-radius: 4px;
+  top: 93%;
+  left: 15%;
+}
+
+.addIngredient {
+  position: absolute;
+  background-color: #07546D;
+  font-style: italic;
+  border-radius: 4px;
+  border: none;
+  color: #FDFEFE;
+  top: 93%;
+  left: 36%;
+}
+
+.directions {
+  width: 52%;
+  height: 18%;
+  border-radius: 4px;
+  position: absolute;
+  overflow-y: scroll;
+  top: 73%;
+  left: 45%;
+}
+
+.updateDirections {
+  position: absolute;
+  background-color: #07546D;
+  font-style: italic;
+  border-radius: 4px;
+  border: none;
+  color: #FDFEFE;
+  top: 93%;
+  left: 45%;
+  width: 53%;
+}
+
+.innerContainer {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  max-height: 90%;
+  top: 50px;
+  overflow-y: scroll;
+}
+
+.findRecipe {
+  position: absolute;
+  left: 30%;
+  width: 40%;
+  background-color: #FDFEFE;
+  border-radius: 4px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.recipeBlock {
+  float: left;
+  width: 46%;
+  height: 120px;
+  background-color: #FDFEFE;
+  border-radius: 4px;
+  margin-right: 4%;
+  margin-top: 15px;
+}
+
+.recipeName {
+  position: absolute;
+  left: 45%;
+  top: 10%;
+  width: 30%;
+}
+
+.recipeNameDisplay {
+  position: absolute;
+  left: 45%;
+  font-size: 30px;
+  max-width: 55%;
+}

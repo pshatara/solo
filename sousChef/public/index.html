@@ -1,0 +1,80 @@
+<!DOCTYPE html >
+<html>
+  <head>
+    <link rel='stylesheet' type='css' href='./stylesheets/style.css'>
+    <script src='bower_components/angular/angular.js'></script>
+    <script src='bower_components/underscore/underscore.js'></script>
+    <script src='bower_components/firebase/firebase.js'></script>
+    <script src='bower_components/angularfire/dist/angularfire.js'></script>
+    <script src='bower_components/angularfire/dist/angularfire.min.js'></script>
+
+    <script src='create.js'></script>
+  </head>
+  
+  <body ng-app='sousChef.create'>
+    <div class='banner'>
+      <span class='title'><p class='title'>SousChef</p></span>
+      <span class='navRecipes' ng-click='page=false'><p>Recipes</p></span>
+      <span class='navCreate' ng-click='page=true' ng-click='newRecipe=true'><p>Create+</p></span>
+    </div>
+
+    <!--Create Page-->
+<!--     <div class='container' ng-controller='CreateController as create' ng-show='page' ng-show='newRecipe'>
+      <h1 class='prompt'> What is your recipe's name? </h1>
+      <form ng-submit='newRecipe=false'>
+        <input class='promptForm' placeholder='Recipe Name'/> 
+        <button class='promptButton' ng-click='newRecipe=false'> Submit </button>
+      </form>
+    </div> -->
+
+    <div class='container' ng-controller='CreateController as create' ng-show='page'>
+      <form ng-submit='addRecipe(recipeName, directions)'>
+        <img  class='image' src='../images/placeholder_image.jpg'/>
+        <input class='image upload' type="file" onchange="previewFile()">
+
+        <div>
+          <input class='recipeName' placeholder='Recipe Name' ng-model='recipeName'>
+          <span class='recipeNameDisplay'> {{ recipeName }} </span>
+        </div>
+
+        <form ng-submit='addIngredient(ingredient, measurement)'>
+          <input class='measurement' placeholder='Measurement' ng-model='measurement'>
+          <input class='ingredients' placeholder='Ingredient' ng-model='ingredient' >
+          <button class='addIngredient' ng-click='addIngredient(ingredient, measurement)'> Add </button>
+        </form>
+
+        <form ng-submit='updateDirections(directions)'>
+          <textarea class='directions' placeholder='Recipe directions' ng-model='directions'></textarea>
+          <!-- <button class='updateDirections' type='submit'> Update Directions </button> -->
+        </form>
+
+        <div class='ingredientContainer'>
+          <h1 class='ingredientTitle'> Ingredients: </h1>
+          <div class='ingredientList'>
+            <ul ng-repeat='items in ingredientList'>
+              <li>{{ items[0] }} - {{ items[1] }}</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class='directionContainer'>
+          <h1 class='directionTitle'> Instructions: </h1>
+          <p class='directionText'>{{directions}}</p>
+        </div>
+
+        <button class='updateDirections' ng-click='addRecipe(recipeName, directions)'>Save Recipe</button>
+      </form>
+    </div>
+
+    <!--Recipes List-->
+    <div class='container' ng-controller='CreateController as create' ng-show='!page'>
+      <input class='findRecipe' placeholder='Find Recipe'/>
+      
+      <div class='innerContainer'>
+        <div class='recipeBlock'></div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
